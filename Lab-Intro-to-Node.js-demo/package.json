@@ -1,0 +1,13 @@
+{
+  "name": "lab-Intro-to-Node.js-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node ./webServer.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
