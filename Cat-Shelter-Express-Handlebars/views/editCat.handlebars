@@ -1,0 +1,16 @@
+<!--REMOVED from 2 line enctype="multipart/form-data" -->
+        <form action="#" method="POST" class="cat-form">
+            <h2>Edit Cat</h2>
+            <label for="name">Name</label>
+            <input name="name" type="text" id="name" value="{{name}}">
+            <label for="description">Description</label>
+            <textarea name="description" id="description">{{description}}</textarea>
+            <label for="image">Image</label>
+            <input type="text" id="image" name="image" value="{{image}}" >
+            <label for="group">Breed</label>
+            <select id="group">
+                <option value="{{breed}}">{{breed}}</option>
+            </select>
+            <button>Edit Cat</button>
+        </form>
+
