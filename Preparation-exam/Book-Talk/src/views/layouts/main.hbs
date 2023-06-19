@@ -13,13 +13,13 @@
 
 <body>
     
-<div>
-    {{#each errorMessages}}
+  {{#if errorMessages}}
     <div class="errorContainer">
+        {{#each errorMessages}}
         <p>{{this}}</p>
+        {{/each}}
     </div>
-    {{/each}}
-</div>
+    {{/if}}
 
 
  <!-- <div>
