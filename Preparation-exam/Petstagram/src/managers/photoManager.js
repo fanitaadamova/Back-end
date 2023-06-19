@@ -4,7 +4,9 @@ exports.getAllPhotos = () => Photo.find().populate('owner');
 
 exports.getPhotoById = (photoId) => Photo.findById(photoId).populate('owner');
 
-exports.updatePhoto = (photoId, data) => Photo.findByIdAndUpdate(photoId, data);
+exports.updatePhoto = (photoId, data) => Photo.findByIdAndUpdate(photoId, data, { runValidators: true });
+
+
 
 exports.deletePhoto = (photoId) => Photo.findByIdAndDelete(photoId);
 

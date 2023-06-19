@@ -8,12 +8,12 @@
 </head>
 
 <body>
-
-     {{#each errorMessages}}
+    
     <div class="errorContainer">
+        {{#each errorMessages}}
         <p>{{this}}</p>
+        {{/each}}
     </div>
-    {{/each}}
 
     <header>
         <nav class="navbar">
@@ -44,7 +44,7 @@
                         </li>
 
                         <li class="nav-item">
-                             <!-- Check link - is it /profile -->
+                            <!-- Check link - is it /profile -->
                             <!-- Link to Profile Page -->
                             <a href="/profile">
                                 <i>Profile</i>
