@@ -29,17 +29,15 @@
     </header>
 
     <main>
-        <!-- <div>
-            <div class="errorContainer">
-                <p>Error</p>
-            </div>
-        </div> -->
 
+        {{#if errorMessages}}
         <div class="errorContainer">
             {{#each errorMessages}}
             <p>{{this}}</p>
             {{/each}}
         </div>
+        {{/if}}
+
 
         {{{body}}}
     </main>
