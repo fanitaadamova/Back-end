@@ -28,11 +28,13 @@
         </nav>
     </header>
 
-    {{#each errorMessages}}
+     {{#if errorMessages}}
     <div class="errorContainer">
+        {{#each errorMessages}}
         <p>{{this}}</p>
+        {{/each}}
     </div>
-    {{/each}}
+    {{/if}}
 
     {{{body}}}
     <footer>
